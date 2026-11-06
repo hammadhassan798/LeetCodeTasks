@@ -5,12 +5,13 @@ class Solution(object):
         for item in logs:
             sortedlogs.append([item[1], item[0]])
         sortedlogs.sort()
+        print(sortedlogs)
         
         indexedqueries = []
         for i in range(len(queries)):
             indexedqueries.append([queries[i], i])
         indexedqueries.sort()
-        
+        print(indexedqueries)
         resultarr = [0] * len(queries)
         servercounts = {}
         leftptr = 0
